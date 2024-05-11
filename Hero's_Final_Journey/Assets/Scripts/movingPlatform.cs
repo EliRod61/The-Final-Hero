@@ -5,9 +5,9 @@ using UnityEngine;
 public class movingPlatform : MonoBehaviour
 {
     // Platform starting and end position values
-    public Vector3 myStartPosition = new Vector3(0, 0, -2);
-    public Vector3 myEndPosition = new Vector3(-4, 0, -2);
-    public int speed = 3;
+    public Vector3 myStartPosition = new Vector3(-2, 0, -4);
+    public Vector3 myEndPosition = new Vector3(-2, 0, 1);
+    public int speed = 2;
     public bool forward = true;
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class movingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,gameObject.transform.position.z + 1);
+        //gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,gameObject.transform.position.z + 1);
 
         //Platforms goes backward when end position is reached
         if (gameObject.transform.position.z >= myEndPosition.z)
