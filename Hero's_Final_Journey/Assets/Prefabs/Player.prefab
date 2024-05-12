@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5393026714350561586}
   - component: {fileID: 1578790253655884755}
   - component: {fileID: 119884442104661117}
+  - component: {fileID: 4607951755897203611}
   - component: {fileID: 283323364860626476}
   m_Layer: 0
   m_Name: Player
@@ -136,6 +137,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &4607951755897203611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059976904098349907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840355d695146da48bd22a2bf1dae3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  RotateSpeed: 75
+  JumpVelocity: 5
+  DistanceToGround: 0.1
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &283323364860626476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,3 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   RotateSpeed: 75
+  JumpVelocity: 5
+  DistanceToGround: 0.1
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 0

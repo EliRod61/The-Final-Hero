@@ -9,7 +9,7 @@ public class ItemBehavior : MonoBehaviour
         {
             Destroy(this.transform.gameObject);
             
-            Debug.Log("Item collected!");
+            Debug.Log("This item witnessed the destruction of its home...it now fades");
         }
     }
 }
